@@ -3,7 +3,7 @@ from pymongo.write_concern import WriteConcern
 from datetime import datetime, timedelta
 import random
 
-CONNECTION_STRING = "mongodb+srv://pinjuc:<encoded password>@cluster0.xwdztln.mongodb.net/test"
+CONNECTION_STRING = "mongodb+srv://pinjuc:<encoded password>@<your cluster in MongoDB>"
 client = MongoClient(CONNECTION_STRING)
 wc_majority = WriteConcern("majority", wtimeout=1000)
 
